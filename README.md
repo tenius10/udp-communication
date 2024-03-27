@@ -17,6 +17,11 @@ UDP로 파일을 전송하는 프로그램 작성 (sender.c, receiver.c)
 - 서로 다른 machine에서 동작할 필요없음. localhost에서만 통신 가능하면 OK
 <br/>
 
+UDP는 reliability가 낮기 때문에 파일 전송처럼 패킷 손실에 민감한 서비스에서는 사용하지 않는 것이 좋다.<br/>
+현재 과제는 로컬 호스트 간의 통신이기 때문에 패킷이 손실될 일이 없기도 하고, UDP가 TCP보다 구현하기 쉬워서 이런 과제를 내주셨다고 한다.<br/>
+수업 시간에 전송은 UDP처럼 하고 손실된 패킷에 대해서 TCP처럼 복구하는 방법을 많이 사용한다고 설명해주셨는데, <br/>
+아마 이번 과제가 끝나고 다음 과제에서 버전업 시키도록 하시지 않을까 싶다.<br/>
+<br/>
 
 ### ◾ 실행 화면
 ![image](https://github.com/tenius10/udp-communication/assets/108507183/03a8bac2-5d44-44b7-85f8-92f8829be2aa)
